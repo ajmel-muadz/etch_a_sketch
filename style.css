@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #252526;
+}
+
+.page-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-title {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 60px;
+    padding: 0px 15px;
+    display: inline-block;
+    margin: 0;
+    justify-content: center;
+    margin-top: 10px;
+    border: solid 2px white;
+}
+
+.canvas-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.canvas-row {
+    display: flex;
+}
+
+.pixel {
+    background-color: white;
+}
