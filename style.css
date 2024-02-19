@@ -23,9 +23,20 @@ body {
     border: solid 2px white;
 }
 
+.workspace {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eraser {
+    width: 50px;
+    height: 27px;
+    text-align: center;
+    font-size: 10px;
+}
+
 .canvas-container {
-    margin-left: auto;
-    margin-right: auto;
     width: 500px;
     height: 500px;
     margin-top: 20px;
