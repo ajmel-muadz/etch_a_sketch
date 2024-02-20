@@ -19,15 +19,18 @@
         <!--       The right section is for the eraser and the color picker. -->
         <div class="js-workspace workspace">
             <div class="left-section">
-                <p class="js-slider-value slider-value">16</p>
-                <button class="test">Test</button>
-                <input class="js-slider slider" type="range" min="16" value="16" max="100">
+                <p class="grid-size-prompt">Choose your grid size</p>
+                <div class="slider-container">
+                    <p class="js-slider-value slider-value">16</p>
+                    <input class="js-slider slider" type="range" min="16" value="16" max="100" step="6">
+                </div>
             </div>
             <div class="middle-section">
                 <div class="js-canvas-container canvas-container"></div>
             </div>
             <div class="right-section">
                 <button class="js-eraser eraser">Eraser: Off</button>
+                <button class="js-reset-canvas reset-canvas">Reset</button>
                 <input class="js-color-picker color-picker" type="color" id="color-picker">
             </div>
         </div>

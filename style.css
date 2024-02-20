@@ -34,14 +34,26 @@ body {
 }
 
 .left-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.right-section {
-    justify-content: space-around;
+.grid-size-prompt {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
-.eraser {
+.slider-container {
+    display: flex;
+}
+
+.right-section {
+    justify-content: space-evenly;
+}
+
+.eraser, .reset-canvas {
     background-color: rgb(170, 170, 170);
     border: none;
     padding: 10px;
@@ -50,11 +62,11 @@ body {
     cursor: pointer;
 }
 
-.eraser:hover {
+.eraser:hover, .reset-canvas:hover {
     opacity: 0.8;
 }
 
-.eraser:active {
+.eraser:active, .reset-canvas:active {
     opacity: 0.5;
 }
 
@@ -93,6 +105,10 @@ body {
 
 .pixel {
     background-color: white;
+}
+
+.slider {
+    cursor: pointer;
 }
 
 .slider-value {
