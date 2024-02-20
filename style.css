@@ -24,16 +24,61 @@ body {
 }
 
 .workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.left-section, .right-section {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
+.left-section {
+    justify-content: center;
+}
+
+.right-section {
+    justify-content: space-around;
+}
+
 .eraser {
+    background-color: rgb(170, 170, 170);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+
+.eraser:hover {
+    opacity: 0.8;
+}
+
+.eraser:active {
+    opacity: 0.5;
+}
+
+/* Credit to this website for styling color picker because I have no clue how:
+   https://codingartistweb.com/2021/09/styling-input-type-color-pure-css-tutorial/
+*/
+
+#color-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
     width: 50px;
-    height: 27px;
-    text-align: center;
-    font-size: 10px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+#color-picker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+#color-picker::-moz-color-swatch {
+    border-radius: 50%;
+    border: 3px solid #000000;
 }
 
 .canvas-container {
@@ -48,4 +93,11 @@ body {
 
 .pixel {
     background-color: white;
+}
+
+.slider-value {
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
 }

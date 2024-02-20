@@ -15,10 +15,21 @@
             <h1 class="page-title">Etch-a-Sketch</h1>
         </div>
 
+        <!-- NOTE: Left section is for slider to change size of canvas in pixels. -->
+        <!--       The right section is for the eraser and the color picker. -->
         <div class="js-workspace workspace">
-            <button class="js-eraser eraser">Eraser: Off</button>
-            <div class="js-canvas-container canvas-container"></div>
-            <input class="js-color-picker color-picker" type="color">
+            <div class="left-section">
+                <p class="js-slider-value slider-value">16</p>
+                <button class="test">Test</button>
+                <input class="js-slider slider" type="range" min="16" value="16" max="100">
+            </div>
+            <div class="middle-section">
+                <div class="js-canvas-container canvas-container"></div>
+            </div>
+            <div class="right-section">
+                <button class="js-eraser eraser">Eraser: Off</button>
+                <input class="js-color-picker color-picker" type="color" id="color-picker">
+            </div>
         </div>
 
         <script src="script.js"></script>
